@@ -1,11 +1,15 @@
 import React from 'react';
+import { StatusBar } from 'react-native';
 import { StyleSheet, Text } from 'react-native';
-import { SectionView, SectionText } from './styles';
+import { SectionView, SectionText, SectionImage } from './styles';
+import SplashLogo from '../../assets/img/SevenHousesLogo.png';
 
 export const SplashScreen = () => {
   return (
     <SectionView>
       <SectionText>Bem Vindo Ao DevRiseWeek, José!</SectionText>
+      <StatusBar translucent backgroundColor />
+      <SectionImage source={SplashLogo} resizeMode="contain" />
     </SectionView>
   );
 };
